@@ -234,7 +234,7 @@ button {
 }
 
 .page-tittle {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -270,7 +270,7 @@ button {
 }
 
 .button:focus {
-    background-color: #404BBF
+    background-color: #404BBF;
 }
 
 /* ----------SECOND SECTION (Qualities)---------------- */
@@ -514,5 +514,41 @@ button {
 .footer-svg:focus {
     background-color: #31d0aa;
 }
+
+.footer-subscribe {
+    width: 453;
+    height: 80;
+}
+
+.form-subscribe {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    max-width: 264px;
+    padding: 8px;
+
+}
+
+.text-mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+}
+
 
 /* -------------------- ----------------- */
