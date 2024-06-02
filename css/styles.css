@@ -276,7 +276,7 @@ input {
 /* --------------------Modal-overlay ----------------- */
 
 
-/* .modal-overlay-contacts {
+.modal-overlay-contacts {
         position: fixed;
         top: 0;
         left: 0;
@@ -288,16 +288,14 @@ input {
         visibility: hidden;
         pointer-events: none;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }  */
+    } 
 
 
-/* .modal-overlay-contacts.is-open {
+.modal-overlay-contacts.is-open {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
-} */
-
-
+}
 
 .modal-container {
     position: absolute;
