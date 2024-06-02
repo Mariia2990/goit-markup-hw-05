@@ -409,7 +409,6 @@
             <label class="label-text">Subscribe 
                 <input class="form-subscribe" type="email" name="email" placeholder="E-mail">
             </label>
-            </form>
             <button class="subscribe-button" type="submit">Subscribe
             <svg class="icon-send" width="24" height="20">
             <use href="./images/icons.svg#icon-icon-send"></use>  
@@ -422,10 +421,10 @@
 
     <!--Overlay-->
     
-    <div class="overlay-contacts-container">
-        <div class="icon-closed">
+    <div class="modal-overlay-contacts is-open">
+        <div class="modal-container">
             <button class="close-button" type="button">
-            <svg class="form-close-icon" width="8" height="8">
+            <svg class="close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
         </button>
@@ -434,60 +433,58 @@
         <p class="text-form">Leave your contacts and we will call you back</p>
 
         <form class="form" name="issue_report_form" autocomplete="off">
-                <div class="form-overlay">
+                <div class="form-section">
                 <label class="form-label">Name</label>
 
                 <div class="form-input">
-                    <input class="form-input-name" type="text" name="name" />
+                    <input class="form-input-name" type="text" name="user-name" id="user-name" />
                     <svg class="form-icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                 </div>
 
             </div>
-    <div class="form-overlay">
-            <label class="form-label">Phone</label>
+    <div class="form-section">
+            <label class="form-label" for="user-phone">Phone</label>
             <div class="form-input">
-                <input class="form-input-name" type="tel" name="phone" />
+                <input class="form-input-name" type="tel" name="user-phone" id="user-phone" />
                 <svg class="form-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-phone-black"></use>
                 </svg>
             </div>
     </div>
-    <div class="form-overlay">
-        <label class="form-label">Email</label>
+    <div class="form-section">
+        <label class="form-label" for="user-email">Email</label>
         <div class="form-input">
-            <input class="form-input-name" type="email" name="email" />
+            <input class="form-input-name" type="email" name="user-email" id="user-email"/>
             <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
         </div>
     </div>
-    <div class="form-overlay">
-            <label class="form-label">
-                Comment </label>
+    <div class="form-section">
+            <label class="form-label">Comment </label>
         <div class="form-input">
                 <textarea class="form-input-comment" name="comment" rows="5" placeholder="Text input"></textarea>
                 </div>
     </div>
-    <div class="modal-form-checkbox">
+    <div class="form-checkbox">
+        <label class="form-label-checkbox" for="user-privacy">
             <input class="visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy">
-            <label class="form-label-checkbox" for="user-privacy">
+            
         <span class="accept-span">
             <svg class="" width="10" height="8" >
                 <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
             </span>
         I accept the terms and conditions of the<a class="checkbox-link" href="">Privacy Policy</a>
-            </label>
-    
+    </label>
     </div>
 
             <button class="button send-button" type="submit">Send</button>
     </form>
     </div>
     </div>
-</form>
 </body>
 
 </html>

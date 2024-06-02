@@ -273,30 +273,10 @@ input {
     background-color: #404BBF;
 }
 
-/* --------------------Overlay ----------------- */
+/* --------------------Modal-overlay ----------------- */
 
-/* .overlay-contacts-container.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-} */
 
-.icon-closed {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
-    background: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
-}
-
-/* 
-.overlay-contacts-container {
+.modal-overlay-contacts {
         position: fixed;
         top: 0;
         left: 0;
@@ -308,7 +288,30 @@ input {
         visibility: hidden;
         pointer-events: none;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    } */
+    } 
+
+
+.modal-overlay-contacts.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
 
 .close-button {
     position: absolute;
@@ -327,19 +330,15 @@ input {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.form-close-icon {
+.close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.close-button:hover{
+.close-button:hover, 
+.close-icon:hover{
     background-color: #404bbf;
-}
-
-.form-close-icon:hover{    
     fill: #FFFFFF;
-  }
+}
 
 .text-form {
     font-weight: 500;
@@ -413,7 +412,7 @@ input {
     resize: none;
 }
 
-.form-overlay {
+.form-section {
     width: 360px;
     margin-bottom: 8px;
 }
@@ -423,11 +422,10 @@ input {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-
+    transition: fill border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icon:focus,
-.form-icon:hover {
+.form-icon:active {
     fill: #4d5ae5;
 } 
 
@@ -435,7 +433,7 @@ input {
     margin-top: 24px;
 }
 
-.modal-form-checkbox {
+.form-checkbox {
     width: 360px;
     height: 16px;
 }
