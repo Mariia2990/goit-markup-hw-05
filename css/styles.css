@@ -436,8 +436,6 @@ input {
 }
 
 .form-checkbox {
-    width: 360px;
-    height: 16px;
     margin-bottom: 24px;
 }
 
@@ -466,11 +464,10 @@ input {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.visually-hidden:checked,
-.accept-span{
+.form-checkbox-input:checked + .form-label-checkbox> .accept-span {
     background-color: #404bbf;
-    fill:#f4f4fd;
     border: none;
+    fill: #FFFFFF;
 }
 
 .checkbox-link {
@@ -485,7 +482,6 @@ input {
 .span-icon {
 
 }
-
 
 /* -------------------- ----------------- */
 
