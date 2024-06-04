@@ -652,6 +652,7 @@ input {
 
 .footer {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-container{
@@ -660,7 +661,6 @@ input {
 }
 
 .footer-link-text {
-    padding: 100px 0;
     margin-right: 120px;
 }
 
@@ -722,9 +722,7 @@ input {
 }
 
 .footer-subscribe {
-    max-width: 453px;
-    height: 80px;
-    margin: 0 auto;
+    margin-left: auto;
 }
 
 .form-subscribe {
